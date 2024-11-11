@@ -1,8 +1,11 @@
 #include "lists.h"
 
 /**
+ * add_node - creates and adds a node
+ * @head: the first node of the list
+ * @str: the string that will be set in the new node
  *
- *
+ * Return: the already create node
  */
 list_t *add_node(list_t **head, const char *str)
 {

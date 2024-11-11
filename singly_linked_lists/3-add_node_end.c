@@ -1,8 +1,11 @@
 #include "lists.h"
 
 /**
+ * add_node_end - creates and adds a node at end of a list
+ * @head: the first node of the list
+ * @str: the string that will be set in the new node
  *
- *
+ * Return: the created node
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
@@ -18,7 +21,7 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	if (strdup((char *) str) == NULL)
 	{
-		free ((char *)str);
+		free((char *)str);
 		return (NULL);
 	}
 

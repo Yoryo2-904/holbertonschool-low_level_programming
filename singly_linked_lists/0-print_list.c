@@ -1,8 +1,10 @@
 #include "lists.h"
 
 /**
+ * print_list - prints the desite list
+ * @h: the list to be printed
  *
- *
+ * Return: the amount of elements in list
  */
 
 size_t print_list(const list_t *h)
