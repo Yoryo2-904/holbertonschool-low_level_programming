@@ -1,7 +1,11 @@
 #include "lists.h"
 
 /**
+ * add_dnodeint_end - adds  node at the end of list
+ * @head: the reference to put the node
+ * @n: the integer to be set
  *
+ * Return: the created node
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {

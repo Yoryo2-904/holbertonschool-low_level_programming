@@ -1,8 +1,10 @@
 #include "lists.h"
 
 /**
+ * dlistint_len - counts the length of a list
+ * @h: the list to be measure
  *
- *
+ * Return: the length of the list
  */
 size_t dlistint_len(const dlistint_t *h)
 {
