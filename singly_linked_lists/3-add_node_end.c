@@ -36,10 +36,9 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	if (strdup((char *) str) == NULL)
 	{
-		free((char *)str);
+		free(newNode->str);
 		return (NULL);
 	}
-
 	newNode->len = _strlen((char *) str);
 	newNode->next = NULL;
 
@@ -50,7 +49,6 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 
 	temp = *head;
-	
 	while (temp->next)
 		temp = temp->next;
 	temp->next = newNode;
