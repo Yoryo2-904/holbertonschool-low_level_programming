@@ -9,7 +9,7 @@
 unsigned int list_len(const dlistint_t *h)
 {
 	unsigned int i = 0;
-	dlistint_t *temp = (dlistint *) h;
+	dlistint_t *temp = (dlistint_t *) h;
 
 	while (temp)
 	{
@@ -27,7 +27,7 @@ unsigned int list_len(const dlistint_t *h)
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-	unsigned int list_length = list_len(head)
+	unsigned int list_length = list_len(head);
 	unsigned int i = 0;
 	dlistint_t *temp = head;
 
