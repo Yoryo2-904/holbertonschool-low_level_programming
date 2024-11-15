@@ -9,7 +9,7 @@
 unsigned int list_len(const dlistint_t *h)
 {
 	unsigned int i = 0;
-	dlistint_t *temp = h;
+	dlistint_t *temp = (dlistint *) h;
 
 	while (temp)
 	{
