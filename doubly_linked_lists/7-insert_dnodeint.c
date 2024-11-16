@@ -1,25 +1,6 @@
 #include "lists.h"
 
 /**
- * _dlistint_len - counts the length of a list
- * @h: the list to be measure
- *
- * Return: the length of the list
- */
-unsigned int _dlistint_len(const dlistint_t *h)
-{
-	dlistint_t *temp = (dlistint_t *) h;
-	unsigned int i = 0;
-
-	while (temp)
-	{
-		temp = temp->next;
-		i++;
-	}
-	return (i);
-}
-
-/**
  * insert_dnodeint_at_index - insert a node at the desire index
  * @h: the reference
  * @idx: the index to put the new node
