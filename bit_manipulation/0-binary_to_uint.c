@@ -16,10 +16,10 @@ int _strlen(char *s)
 	return (i);
 }
 /**
- * binary_to_uint - converts ints(decimal) to binary
+ * binary_to_uint - converts binary to ints(decimal)
  * @b: the string/number to convert
  *
- * Return: the binary number
+ * Return: the decimal number
  */
 unsigned int binary_to_uint(const char *b)
 {
